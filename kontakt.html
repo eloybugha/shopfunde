@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kontakt | Contact ShopFunde</title>
+
+  <meta
+    name="description"
+    content="Kontaktiere ShopFunde bei Fragen, Hinweisen oder Feedback. Contact ShopFunde for questions and feedback."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://shopfunde.com/kontakt.html"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background:
+        radial-gradient(circle at top right, #ffdb82 0, transparent 30%),
+        linear-gradient(135deg, #fffaf3, #fff2e6);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 18px 6%;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #eee7dc;
+    }
+
+    .header-inner {
+      width: min(1100px, 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin: auto;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #111827;
+      font-size: 27px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      color: #ffffff;
+      background: linear-gradient(135deg, #ff9f1c, #ff5722);
+      border: 4px solid #ffffff;
+      border-radius: 14px;
+      box-shadow:
+        0 0 0 2px #ffd6ae,
+        0 8px 18px rgba(255, 87, 34, 0.18);
+    }
+
+    .orange {
+      color: #ff5a1f;
+    }
+
+    .home-link {
+      padding: 11px 17px;
+      color: #ffffff;
+      background: #ff5a1f;
+      border-radius: 11px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    main {
+      width: min(920px, 92%);
+      flex: 1;
+      margin: 55px auto;
+    }
+
+    .contact-card {
+      padding: 55px;
+      background: rgba(255, 255, 255, 0.93);
+      border: 1px solid #f0e5d8;
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(31, 41, 55, 0.09);
+    }
+
+    .label {
+      color: #ff5a1f;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 7px 0 16px;
+      color: #111827;
+      font-size: clamp(38px, 7vw, 62px);
+      line-height: 1.08;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: #667085;
+      font-size: 18px;
+    }
+
+    .email-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 38px;
+      padding: 25px;
+      background: #fff4e7;
+      border: 1px solid #ffd9be;
+      border-radius: 18px;
+    }
+
+    .email-icon {
+      min-width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      border-radius: 15px;
+      font-size: 27px;
+      box-shadow: 0 8px 20px rgba(31, 41, 55, 0.08);
+    }
+
+    .email-box h2 {
+      color: #111827;
+      font-size: 20px;
+    }
+
+    .email-box a {
+      color: #e94b15;
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 16px 25px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #ff7a1a, #ff4d1f);
+      border-radius: 13px;
+      box-shadow: 0 12px 25px rgba(255, 87, 34, 0.23);
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .information {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 32px;
+    }
+
+    .info-card {
+      padding: 25px;
+      background: #ffffff;
+      border: 1px solid #ebe7e1;
+      border-radius: 18px;
+    }
+
+    .info-card h2 {
+      margin-bottom: 10px;
+      color: #111827;
+      font-size: 19px;
+    }
+
+    .info-card p {
+      color: #667085;
+    }
+
+    .english {
+      margin-top: 13px;
+      padding-left: 14px;
+      color: #7b8493;
+      border-left: 3px solid #ffd1bd;
+    }
+
+    .notice {
+      margin-top: 30px;
+      padding: 22px;
+      color: #4b5563;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 15px;
+    }
+
+    footer {
+      padding: 32px 6%;
+      color: #aeb7c7;
+      background: #111827;
+      text-align: center;
+    }
+
+    footer a {
+      display: inline-block;
+      margin: 8px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 15px 4%;
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .home-link {
+        padding: 9px 12px;
+        font-size: 13px;
+      }
+
+      main {
+        margin: 30px auto;
+      }
+
+      .contact-card {
+        padding: 32px 21px;
+      }
+
+      .email-box {
+        align-items: flex-start;
+      }
+
+      .information {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <a class="logo" href="/" aria-label="ShopFunde Startseite">
+      <span class="logo-icon">S</span>
+      Shop<span class="orange">Funde</span>
+    </a>
+
+    <a class="home-link" href="/">
+      Startseite
+    </a>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="contact-card">
+
+    <div class="label">
+      Kontakt · Contact
+    </div>
+
+    <h1>Schreib uns.</h1>
+
+    <p class="intro">
+      Hast du eine Frage, einen Hinweis oder Feedback zu ShopFunde?
+      Sende uns einfach eine E-Mail. Wir freuen uns über hilfreiche
+      Nachrichten und Verbesserungsvorschläge.
+    </p>
+
+    <p class="english">
+      Do you have a question, suggestion or feedback about ShopFunde?
+      Send us an email and we will review your message.
+    </p>
+
+    <div class="email-box">
+
+      <div class="email-icon" aria-hidden="true">
+        ✉️
+      </div>
+
+      <div>
+        <h2>E-Mail / Email</h2>
+
+        <a href="mailto:welcome_1983@yahoo.com">
+          welcome_1983@yahoo.com
+        </a>
+      </div>
+
+    </div>
+
+    <a
+      class="button"
+      href="mailto:welcome_1983@yahoo.com?subject=ShopFunde%20Anfrage"
+    >
+      E-Mail senden →
+    </a>
+
+    <div class="information">
+
+      <article class="info-card">
+        <h2>Allgemeine Fragen</h2>
+
+        <p>
+          Für Hinweise zu unseren Inhalten, fehlerhaften Links oder
+          Verbesserungsvorschläge kannst du uns direkt kontaktieren.
+        </p>
+
+        <p class="english">
+          Contact us about our content, broken links or suggestions
+          for improving ShopFunde.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h2>Bestellungen und Produkte</h2>
+
+        <p>
+          ShopFunde verkauft und versendet keine Produkte. Bei Fragen
+          zu Bestellung, Zahlung, Rückgabe oder Lieferung wende dich
+          bitte direkt an den jeweiligen Online-Shop.
+        </p>
+
+        <p class="english">
+          ShopFunde does not sell or ship products. For questions
+          about orders, payments, returns or delivery, contact the
+          relevant online shop directly.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="notice">
+      <strong>Datenschutz / Privacy:</strong>
+
+      <p style="margin-top:7px;">
+        Informationen zur Verarbeitung von Kontaktdaten findest du in
+        unserer
+        <a href="/datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+
+      <p class="english">
+        Information about how contact details are processed is
+        available in our
+        <a href="/datenschutz.html">Privacy Policy</a>.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>© 2026 ShopFunde</p>
+
+  <nav aria-label="Footer navigation">
+    <a href="/">Startseite</a>
+    <a href="/kontakt.html">Kontakt</a>
+    <a href="/impressum.html">Impressum</a>
+    <a href="/datenschutz.html">Datenschutz</a>
+  </nav>
+
+</footer>
+
+</body>
+</html>
