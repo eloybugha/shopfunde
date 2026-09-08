@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /search/
+Disallow: /tag/
+Disallow: /category/
+Disallow: /*?*
+Disallow: /*&*
+
+Sitemap: https://shopfunde.com/sitemap.xml
