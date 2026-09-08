@@ -177,7 +177,11 @@
       display: grid;
       grid-template-columns: 1.02fr 0.98fr;
       gap: 42px;
-      align-items: center;
+      align-items: start;
+    }
+
+    .hero-grid > div:first-child {
+      padding-top: 24px;
     }
 
     .eyebrow {
@@ -258,8 +262,10 @@
     }
 
     .hero-media img {
-      min-height: 520px;
+      height: 560px;
+      min-height: 0;
       object-fit: cover;
+      object-position: center;
       border-radius: 32px;
       box-shadow: var(--shadow);
     }
@@ -607,8 +613,14 @@
       }
 
       .hero-media img {
-        min-height: 360px;
-        max-height: 500px;
+        height: clamp(340px, 62vw, 500px);
+        min-height: 0;
+        max-height: none;
+        object-position: 65% center;
+      }
+
+      .hero-grid > div:first-child {
+        padding-top: 0;
       }
 
       .card-grid {
@@ -655,7 +667,9 @@
       }
 
       .hero-media img {
-        min-height: 300px;
+        height: 390px;
+        min-height: 0;
+        object-position: 65% center;
         border-radius: 23px;
       }
 
