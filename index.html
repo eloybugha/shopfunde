@@ -13,6 +13,8 @@
   <meta name="theme-color" content="#ff5a1f">
 
   <link rel="canonical" href="https://shopfunde.com/">
+  <link rel="icon" type="image/png" href="/assets/shopfunde-icon.png">
+  <link rel="apple-touch-icon" href="/assets/shopfunde-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -23,6 +25,7 @@
   <meta property="og:description"
         content="Praktische Produkte, beliebte Trends und clevere Online-Funde an einem Ort.">
   <meta property="og:url" content="https://shopfunde.com/">
+  <meta property="og:image" content="https://shopfunde.com/assets/shopfunde-icon.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
@@ -127,17 +130,10 @@
     .logo-mark {
       width: 42px;
       height: 42px;
-      display: grid;
-      place-items: center;
+      display: block;
       flex-shrink: 0;
-      color: var(--white);
-      background: linear-gradient(135deg, var(--orange), var(--yellow));
-      border: 3px solid var(--white);
-      border-radius: 13px;
-      outline: 3px solid rgba(255, 90, 31, 0.20);
-      box-shadow: 0 7px 17px rgba(255, 90, 31, 0.22);
-      font-size: 23px;
-      font-weight: 900;
+      object-fit: contain;
+      border-radius: 10px;
     }
 
     .logo-name span {
@@ -911,7 +907,11 @@
     <div class="container nav-wrap">
 
       <a href="/" class="logo" aria-label="ShopFunde Startseite">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <img src="/assets/shopfunde-icon.png"
+             class="logo-mark"
+             width="42"
+             height="42"
+             alt="ShopFunde Logo">
         <span class="logo-name">Shop<span>Funde</span></span>
       </a>
 
@@ -1260,7 +1260,11 @@
 
         <div>
           <a href="/" class="logo" aria-label="ShopFunde Startseite">
-            <span class="logo-mark" aria-hidden="true">S</span>
+            <img src="/assets/shopfunde-icon.png"
+                 class="logo-mark"
+                 width="42"
+                 height="42"
+                 alt="ShopFunde Logo">
             <span class="logo-name">Shop<span>Funde</span></span>
           </a>
 
