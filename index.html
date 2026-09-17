@@ -442,13 +442,10 @@
 
     .category-card {
       position: relative;
-      min-height: 225px;
+      min-height: 285px;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 25px;
-      background: var(--cream);
+      display: block;
+      background: var(--white);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       transition:
@@ -461,35 +458,31 @@
       box-shadow: var(--shadow);
     }
 
-    .category-card:nth-child(2) {
-      background: var(--blue-soft);
+    .category-image {
+      width: 100%;
+      height: 155px;
+      object-fit: cover;
+      transition: transform 0.35s ease;
     }
 
-    .category-card:nth-child(3) {
-      background: var(--green-soft);
+    .category-card:hover .category-image {
+      transform: scale(1.04);
     }
 
-    .category-card:nth-child(4) {
-      background: var(--pink-soft);
-    }
-
-    .category-icon {
-      position: absolute;
-      top: 18px;
-      right: 20px;
-      font-size: 67px;
-      filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.08));
+    .category-content {
+      position: relative;
+      min-height: 130px;
+      padding: 20px 22px 22px;
+      background: var(--white);
     }
 
     .category-card h3 {
-      position: relative;
       color: var(--dark);
       margin-bottom: 5px;
       font-size: 20px;
     }
 
     .category-card p {
-      position: relative;
       color: var(--muted);
       font-size: 13px;
     }
@@ -875,7 +868,11 @@
       }
 
       .category-card {
-        min-height: 190px;
+        min-height: 0;
+      }
+
+      .category-image {
+        height: 210px;
       }
 
       .find-visual {
@@ -1036,28 +1033,48 @@
 
         <div class="category-grid">
 
-          <a href="#empfehlungen" class="category-card">
-            <span class="category-icon" aria-hidden="true">🏠</span>
-            <h3>Haus & Alltag</h3>
-            <p>Praktische Helfer für ein angenehmeres Zuhause.</p>
+          <a href="/praktische-haushaltshelfer.html" class="category-card">
+            <img class="category-image"
+                 src="/assets/haushalt/praktische-haushaltshelfer-hero.webp"
+                 alt="Praktische Haushaltshelfer für Zuhause"
+                 width="640" height="420" loading="lazy">
+            <div class="category-content">
+              <h3>Haushalt</h3>
+              <p>Praktische Helfer für ein angenehmeres Zuhause.</p>
+            </div>
           </a>
 
-          <a href="#empfehlungen" class="category-card">
-            <span class="category-icon" aria-hidden="true">🎧</span>
-            <h3>Technik & Gadgets</h3>
-            <p>Nützliche Geräte und clevere technische Ideen.</p>
+          <a href="/praktische-kuechenhelfer.html" class="category-card">
+            <img class="category-image"
+                 src="/assets/kueche/praktische-kuechenhelfer-hero.webp"
+                 alt="Praktische Küchenhelfer zum Kochen und Aufbewahren"
+                 width="640" height="420" loading="lazy">
+            <div class="category-content">
+              <h3>Küche</h3>
+              <p>Praktische Helfer für Kochen, Vorbereitung und Aufbewahrung.</p>
+            </div>
           </a>
 
-          <a href="#empfehlungen" class="category-card">
-            <span class="category-icon" aria-hidden="true">👟</span>
-            <h3>Mode & Zubehör</h3>
-            <p>Trendige Kleidung, Accessoires und Lifestyle-Funde.</p>
+          <a href="/praktische-technik-gadgets.html" class="category-card">
+            <img class="category-image"
+                 src="/assets/technik/praktische-technik-gadgets-hero.webp"
+                 alt="Praktische Technik-Gadgets für Alltag und Zuhause"
+                 width="640" height="420" loading="lazy">
+            <div class="category-content">
+              <h3>Technik</h3>
+              <p>Nützliche Geräte und clevere technische Ideen.</p>
+            </div>
           </a>
 
-          <a href="#empfehlungen" class="category-card">
-            <span class="category-icon" aria-hidden="true">💄</span>
-            <h3>Beauty & Pflege</h3>
-            <p>Beliebte Produkte für Schönheit und Wohlbefinden.</p>
+          <a href="/praktische-mode-accessoires.html" class="category-card">
+            <img class="category-image"
+                 src="/assets/mode/praktische-mode-accessoires-hero.webp"
+                 alt="Praktische Mode-Accessoires und Lifestyle-Funde"
+                 width="640" height="420" loading="lazy">
+            <div class="category-content">
+              <h3>Mode</h3>
+              <p>Praktische Accessoires und interessante Lifestyle-Funde.</p>
+            </div>
           </a>
 
         </div>
@@ -1097,11 +1114,9 @@
                 Aufbewahrung einfacher machen können.
               </p>
 
-              <a href="https://www.dpbolvw.net/click-101586981-15623152"
-                 class="text-link"
-                 target="_blank"
-                 rel="sponsored nofollow noopener">
-                Bei Temu entdecken →
+              <a href="/praktische-kuechenhelfer.html"
+                 class="text-link">
+                Kategorie entdecken →
               </a>
             </div>
 
@@ -1123,11 +1138,9 @@
                 Arbeitsplatz und unterwegs.
               </p>
 
-              <a href="https://www.dpbolvw.net/click-101586981-15623152"
-                 class="text-link"
-                 target="_blank"
-                 rel="sponsored nofollow noopener">
-                Bei Temu entdecken →
+              <a href="/praktische-technik-gadgets.html"
+                 class="text-link">
+                Kategorie entdecken →
               </a>
             </div>
 
@@ -1140,20 +1153,18 @@
             </div>
 
             <div class="find-content">
-              <span class="tag">Organisation</span>
+              <span class="tag">Haushalt</span>
 
-              <h3>Ordnung für dein Zuhause</h3>
+              <h3>Praktische Haushaltshelfer</h3>
 
               <p>
-                Aufbewahrungsideen und praktische Lösungen für
-                kleinere und besser organisierte Räume.
+                Nützliche Ideen für Ordnung, Reinigung und einen
+                angenehmeren Alltag zu Hause.
               </p>
 
-              <a href="https://www.dpbolvw.net/click-101586981-15623152"
-                 class="text-link"
-                 target="_blank"
-                 rel="sponsored nofollow noopener">
-                Bei Temu entdecken →
+              <a href="/praktische-haushaltshelfer.html"
+                 class="text-link">
+                Kategorie entdecken →
               </a>
             </div>
 
@@ -1228,7 +1239,7 @@
 
             <p>
               Entdecke eine große Auswahl an Produkten für Zuhause,
-              Technik, Mode, Beauty und Alltag bei Temu.
+              Haushalt, Küche, Technik und Mode bei Temu.
             </p>
           </div>
 
