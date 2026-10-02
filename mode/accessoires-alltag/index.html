@@ -20,13 +20,15 @@
 
   <link rel="canonical" href="https://shopfunde.com/mode/accessoires-alltag/">
   <link rel="icon" type="image/png" href="/assets/shopfunde-icon.png">
+  <link rel="apple-touch-icon" href="/assets/shopfunde-icon.png">
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="ShopFunde">
   <meta property="og:title" content="Praktische Accessoires für den Alltag – Auswahl &amp; Einkauf">
   <meta property="og:description" content="Welche Accessoires passen zu deinem Alltag? Entdecke Ideen und prüfe Material, Maße und Funktionen vor dem Kauf.">
   <meta property="og:url" content="https://shopfunde.com/mode/accessoires-alltag/">
-  <meta property="og:image" content="https://shopfunde.com/assets/mode/accessoires-alltag-hero.webp">
+  <meta property="og:image" content="https://shopfunde.com/assets/mode-accessoires-alltag-hero.webp">
+  <meta property="og:image:alt" content="Praktische Accessoires für den Alltag">
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
@@ -43,6 +45,7 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-bottom: 90px;
     }
 
     body {
@@ -51,10 +54,17 @@
       color: var(--ink);
       background: #fafafa;
       line-height: 1.7;
+      overflow-wrap: break-word;
     }
 
     a {
       color: #a83209;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #a83209;
+      outline-offset: 4px;
     }
 
     header {
@@ -73,6 +83,9 @@
     }
 
     .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       font-size: 24px;
       font-weight: 800;
       color: var(--orange);
@@ -80,10 +93,18 @@
       margin-right: auto;
     }
 
+    .brand img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
     .nav nav {
       display: flex;
       gap: 18px;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .nav nav a {
@@ -95,7 +116,7 @@
     main {
       max-width: 1000px;
       margin: auto;
-      padding: 24px 20px 100px;
+      padding: 24px 20px 40px;
     }
 
     .crumbs {
@@ -106,6 +127,7 @@
 
     .hero {
       width: 100%;
+      height: auto;
       aspect-ratio: 16 / 9;
       object-fit: cover;
       border-radius: 18px;
@@ -141,11 +163,16 @@
     .button {
       display: inline-block;
       background: var(--orange);
-      color: #fff;
+      color: #222;
       text-decoration: none;
       font-weight: 700;
       padding: 13px 22px;
       border-radius: 10px;
+      text-align: center;
+    }
+
+    .button:hover {
+      background: #ff743f;
     }
 
     .box,
@@ -212,14 +239,40 @@
 
     footer {
       text-align: center;
-      padding: 28px 20px;
+      padding: 28px 20px calc(110px + env(safe-area-inset-bottom, 0px));
       background: #fff;
       border-top: 1px solid var(--line);
       font-size: 14px;
     }
 
-    footer a {
-      margin: 0 8px;
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: var(--orange);
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .footer-brand img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      margin: 18px 0;
+    }
+
+    footer .disclosure {
+      max-width: 750px;
+      margin: 18px auto;
     }
 
     .sticky {
@@ -229,7 +282,7 @@
       right: 0;
       background: #fff;
       border-top: 1px solid var(--line);
-      padding: 10px 16px;
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
       display: flex;
       justify-content: center;
       z-index: 10;
@@ -246,9 +299,11 @@
 
       .nav {
         gap: 12px;
+        padding: 14px 18px;
       }
 
       .nav nav {
+        width: 100%;
         gap: 12px;
         font-size: 14px;
       }
@@ -260,6 +315,16 @@
 
       h2 {
         font-size: 23px;
+      }
+
+      .hero {
+        border-radius: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
       }
     }
   </style>
@@ -273,15 +338,20 @@
         "headline": "Welche Accessoires sind für den Alltag unverzichtbar und wo kann ich sie kaufen?",
         "description": "Praktische Accessoires für Alltag, Arbeit und unterwegs mit Auswahl- und Einkaufstipps.",
         "image": "https://shopfunde.com/assets/mode/accessoires-alltag-hero.webp",
-        "mainEntityOfPage": "https://shopfunde.com/mode/accessoires-alltag/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://shopfunde.com/mode/accessoires-alltag/"
+        },
         "inLanguage": "de",
         "author": {
           "@type": "Organization",
-          "name": "ShopFunde"
+          "name": "ShopFunde",
+          "url": "https://shopfunde.com/"
         },
         "publisher": {
           "@type": "Organization",
           "name": "ShopFunde",
+          "url": "https://shopfunde.com/",
           "logo": {
             "@type": "ImageObject",
             "url": "https://shopfunde.com/assets/shopfunde-icon.png"
@@ -319,23 +389,33 @@
 <body>
   <header>
     <div class="nav">
-      <a class="brand" href="/" translate="no">ShopFunde</a>
+      <a class="brand" href="/" translate="no" aria-label="ShopFunde Startseite">
+        <img
+          src="/assets/shopfunde-icon.png"
+          alt=""
+          width="42"
+          height="42"
+        >
+        <span>ShopFunde</span>
+      </a>
 
       <nav aria-label="Hauptnavigation">
+        <a href="/">Startseite</a>
         <a href="/haushalt/">Haushalt</a>
         <a href="/technik/">Technik</a>
         <a href="/kueche/">Küche</a>
         <a href="/mode/">Mode</a>
+        <a href="/kontakt/">Kontakt</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="crumbs">
+    <nav class="crumbs" aria-label="Brotkrümelnavigation">
       <a href="/">Startseite</a> ›
       <a href="/mode/">Mode</a> ›
-      Accessoires für den Alltag
-    </div>
+      <span aria-current="page">Accessoires für den Alltag</span>
+    </nav>
 
     <img
       class="hero"
@@ -396,9 +476,9 @@
         <table>
           <thead>
             <tr>
-              <th>Situation</th>
-              <th>Mögliche Accessoires</th>
-              <th>Vor dem Kauf prüfen</th>
+              <th scope="col">Situation</th>
+              <th scope="col">Mögliche Accessoires</th>
+              <th scope="col">Vor dem Kauf prüfen</th>
             </tr>
           </thead>
 
@@ -667,13 +747,44 @@
   </main>
 
   <footer>
-    <p translate="no">© ShopFunde</p>
+    <a
+      class="footer-brand"
+      href="/"
+      translate="no"
+      aria-label="ShopFunde Startseite"
+    >
+      <img
+        src="/assets/shopfunde-icon.png"
+        alt=""
+        width="40"
+        height="40"
+        loading="lazy"
+      >
+      <span>ShopFunde</span>
+    </a>
 
     <p>
-      <a href="/impressum/">Impressum</a>
-      <a href="/datenschutz/">Datenschutz</a>
-      <a href="/kontakt/">Kontakt</a>
+      Praktische Produktideen für Haushalt, Technik, Küche und Alltag.
     </p>
+
+    <nav class="footer-links" aria-label="Footer-Navigation">
+      <a href="/">Startseite</a>
+      <a href="/haushalt/">Haushalt</a>
+      <a href="/technik/">Technik</a>
+      <a href="/kueche/">Küche</a>
+      <a href="/mode/">Mode</a>
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz / Privacy Policy</a>
+      <a href="/kontakt/">Kontakt / Contact</a>
+    </nav>
+
+    <p class="disclosure">
+      Werbung / Affiliate-Hinweis: Wenn du über unsere Affiliate-Links
+      einkaufst, können wir eine Provision erhalten.
+      Für dich entstehen dadurch keine zusätzlichen Kosten.
+    </p>
+
+    <p translate="no">© ShopFunde</p>
   </footer>
 
   <div class="sticky">
@@ -682,7 +793,7 @@
       href="https://www.jdoqocy.com/click-101879213-15584361"
       target="_blank"
       rel="sponsored noopener noreferrer"
-    >Accessoires ansehen ↗</a>
+    >Accessoires bei Temu ansehen ↗</a>
   </div>
 </body>
 </html>
