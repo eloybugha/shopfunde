@@ -421,8 +421,17 @@
     }
     .hero-media img{
   width:100%;
-  height:auto;
-  object-fit:contain;
+  height:520px;
+  object-fit:cover;
+  object-position:center;
+}
+
+@media(max-width:900px){
+  .hero-media img{height:430px}
+}
+
+@media(max-width:620px){
+  .hero-media img{height:340px}
 }
   </style>
 </head>
