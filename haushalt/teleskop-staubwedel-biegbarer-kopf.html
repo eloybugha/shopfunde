@@ -26,14 +26,14 @@
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="ShopFunde">
   <meta property="og:title" content="Teleskop-Staubwedel mit biegbarem Kopf">
-  <meta property="og:description" content="Teleskop-Staubwedel mit biegbarem Kopf, laut Angebot waschbar und wiederverwendbar. Überblick zu 140- und 250-cm-Varianten für hohe Decken und Möbel.">
+  <meta property="og:description" content="Ausziehbarer Staubwedel mit biegbarem Kopf. Produktüberblick, Längenvarianten und Pflegehinweise.">
   <meta property="og:url" content="https://shopfunde.com/haushalt/teleskop-staubwedel-biegbarer-kopf.html">
   <meta property="og:image" content="https://shopfunde.com/assets/haushalt/teleskop-staubwedel-biegbarer-kopf-hero.webp">
-  <meta property="og:image:alt" content="Grauer Teleskop-Staubwedel mit ausziehbarem Stiel und biegbarem Reinigungskopf">
+  <meta property="og:image:alt" content="Model verwendet einen grauen Teleskop-Staubwedel zum Abstauben eines hohen Schranks">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Teleskop-Staubwedel mit biegbarem Kopf | ShopFunde">
-  <meta name="twitter:description" content="Teleskop-Staubwedel mit biegbarem Kopf, laut Angebot waschbar und wiederverwendbar. Überblick zu 140- und 250-cm-Varianten für hohe Decken und Möbel.">
+  <meta name="twitter:description" content="Ausziehbarer Staubwedel mit biegbarem Kopf. Details zu Längenvarianten, Anwendung und Pflege.">
   <meta name="twitter:image" content="https://shopfunde.com/assets/haushalt/teleskop-staubwedel-biegbarer-kopf-hero.webp">
 
   <script type="application/ld+json">
@@ -41,7 +41,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Teleskop-Staubwedel mit biegbarem Kopf",
-    "description": "Teleskop-Staubwedel mit biegbarem Kopf, laut Angebot waschbar und wiederverwendbar. Überblick zu 140- und 250-cm-Varianten für hohe Decken und Möbel.",
+    "description": "Produktüberblick zu einem ausziehbaren Staubwedel mit biegbarem Kopf, der laut Angebot waschbar und wiederverwendbar ist.",
     "image": "https://shopfunde.com/assets/haushalt/teleskop-staubwedel-biegbarer-kopf-hero.webp",
     "author": {
       "@type": "Organization",
@@ -149,8 +149,9 @@
       line-height:1.7;
     }
 
-    img{display:block;width:100%}
+    img{display:block;max-width:100%}
     a{color:inherit}
+    h1,h2,h3,p{overflow-wrap:break-word}
 
     .container{
       width:min(calc(100% - 36px),var(--max));
@@ -182,6 +183,7 @@
       font-size:1.55rem;
       font-weight:850;
       letter-spacing:-.04em;
+      flex-shrink:0;
     }
 
     .brand img{
@@ -235,11 +237,12 @@
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.02fr .98fr;
+      grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
       gap:42px;
       align-items:start;
     }
 
+    .hero-grid > *{min-width:0}
     .hero-copy{padding-top:24px}
 
     .eyebrow,.section-label{
@@ -250,8 +253,6 @@
       letter-spacing:.12em;
       text-transform:uppercase;
     }
-
-    h1,h2,h3,p{overflow-wrap:break-word}
 
     h1{
       margin:0;
@@ -292,25 +293,22 @@
       border-radius:14px;
       text-decoration:none;
       font-weight:850;
+      text-align:center;
       transition:.2s;
     }
 
     .button:hover{transform:translateY(-2px)}
-
-    .button-primary{
-      color:#fff;
-      background:var(--orange);
-    }
-
+    .button-primary{color:#fff;background:var(--orange)}
     .button-primary:hover{background:var(--orange-dark)}
-
-    .button-secondary{
-      background:#fff;
-      border:1px solid var(--border);
-    }
+    .button-secondary{background:#fff;border:1px solid var(--border)}
 
     .hero-media{
       position:relative;
+      width:100%;
+      max-width:100%;
+      height:auto !important;
+      min-height:0 !important;
+      align-self:start;
       overflow:hidden;
       background:#fff;
       border:8px solid #fff;
@@ -319,10 +317,16 @@
     }
 
     .hero-media img{
-      width:100%;
-      height:520px;
-      object-fit:contain;
+      display:block;
+      width:100% !important;
+      max-width:100% !important;
+      height:auto !important;
+      min-height:0 !important;
+      max-height:none !important;
+      aspect-ratio:auto !important;
+      object-fit:contain !important;
       object-position:center;
+      margin:0;
     }
 
     .section{
@@ -351,11 +355,12 @@
 
     .card-grid{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
+      grid-template-columns:repeat(3,minmax(0,1fr));
       gap:22px;
     }
 
     .card,.info-box{
+      min-width:0;
       padding:28px;
       background:#fff;
       border:1px solid var(--border);
@@ -388,7 +393,7 @@
 
     .content-grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
+      grid-template-columns:repeat(2,minmax(0,1fr));
       gap:26px;
     }
 
@@ -454,16 +459,8 @@
       letter-spacing:.08em;
     }
 
-    .related-card strong{
-      display:block;
-      font-size:1.35rem;
-    }
-
-    .related-card p{
-      margin:7px 0 0;
-      color:var(--muted);
-    }
-
+    .related-card strong{display:block;font-size:1.35rem}
+    .related-card p{margin:7px 0 0;color:var(--muted)}
     .faq-list{display:grid;gap:14px}
 
     details{
@@ -473,15 +470,8 @@
       border-radius:17px;
     }
 
-    summary{
-      cursor:pointer;
-      font-weight:800;
-    }
-
-    details p{
-      margin:13px 0 0;
-      color:var(--muted);
-    }
+    summary{cursor:pointer;font-weight:800}
+    details p{margin:13px 0 0;color:var(--muted)}
 
     .english-summary{
       padding:27px;
@@ -490,15 +480,8 @@
       border-radius:var(--radius);
     }
 
-    .english-summary h2{
-      margin:0 0 9px;
-      font-size:1.65rem;
-    }
-
-    .english-summary p{
-      margin:0;
-      color:var(--muted);
-    }
+    .english-summary h2{margin:0 0 9px;font-size:1.65rem}
+    .english-summary p{margin:0;color:var(--muted)}
 
     .disclosure{
       padding:21px 0;
@@ -538,11 +521,7 @@
       gap:17px;
     }
 
-    .footer-links a{
-      color:#d8dee7;
-      text-decoration:none;
-    }
-
+    .footer-links a{color:#d8dee7;text-decoration:none}
     .footer-links a:hover{color:var(--yellow)}
 
     .copyright{
@@ -559,21 +538,17 @@
     }
 
     @media(max-width:900px){
-      .hero-grid,.content-grid{grid-template-columns:1fr}
-      .card-grid{grid-template-columns:1fr 1fr}
+      .hero-grid,.content-grid{grid-template-columns:minmax(0,1fr)}
+      .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
       .hero-copy{padding-top:0}
-      .hero-media{max-width:720px}
-      .hero-media img{height:430px}
+      .hero-media{max-width:720px;margin-inline:auto}
       .nav-links a:not(.nav-cta){display:none}
     }
 
     @media(max-width:620px){
-      .container{
-        width:min(calc(100% - 26px),var(--max));
-      }
-
+      .container{width:min(calc(100% - 26px),var(--max))}
       .nav{min-height:68px;gap:12px}
-      .brand{font-size:1.25rem}
+      .brand{font-size:1.25rem;gap:8px}
       .brand img{width:42px;height:42px}
       .nav-cta{padding:9px 13px;font-size:.82rem}
       .hero{padding:34px 0 25px}
@@ -582,9 +557,8 @@
       h1{font-size:2.65rem}
       .hero-lead{margin-top:18px;font-size:1rem}
       .hero-actions,.hero-actions .button{width:100%}
-      .hero-media img{height:340px;object-position:center}
       .section{padding:55px 0}
-      .card-grid{grid-template-columns:1fr}
+      .card-grid{grid-template-columns:minmax(0,1fr)}
       .card,.info-box{padding:24px}
       .cta-box{padding:30px 23px}
       .footer-grid{flex-direction:column}
@@ -655,8 +629,8 @@
 
           <div class="hero-media">
             <img src="/assets/haushalt/teleskop-staubwedel-biegbarer-kopf-hero.webp"
-                 alt="Grauer Teleskop-Staubwedel mit ausziehbarem Stiel und biegbarem Reinigungskopf"
-                 width="1200" height="900"
+                 alt="Model verwendet einen grauen Teleskop-Staubwedel zum Abstauben eines hohen Schranks"
+                 width="1448" height="1086"
                  loading="eager" fetchpriority="high">
           </div>
         </div>
