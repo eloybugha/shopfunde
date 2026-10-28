@@ -3,14 +3,14 @@
 
   // DITO LANG PAPALITAN ANG PROMO SA LAHAT NG CONNECTED PAGES.
   const PROMO = {
-    enabled: true,
-    url: 'https://www.dpbolvw.net/click-101586981-15850975',
-    headline: '30 % Rabatt für Neukunden',
-    description: 'Temu-Gutschein für Frankreich',
-    code: 'FRANEW30',
-    terms: 'Ab 39 € Bestellwert · Maximal 25 € Rabatt · Nur für Neukunden in Frankreich.',
-    button: 'Angebot bei Temu ansehen →'
-  };
+  enabled: true,
+  url: 'https://www.tkqlhce.com/click-101879213-15623152',
+  headline: 'Aktuelle Temu-Angebote entdecken',
+  description: 'Entdecke Angebote aus verschiedenen Kategorien.',
+  code: '',
+  terms: 'Rabatte, Preise und Verfügbarkeit können variieren. Es gelten die aktuellen Angebotsbedingungen bei Temu.',
+  button: 'Angebote bei Temu ansehen →'
+};
 
   function init() {
     let promoURL = '';
