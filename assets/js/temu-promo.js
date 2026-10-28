@@ -9,7 +9,7 @@
    */
   const PROMO = {
     enabled: true,
-    url: '',
+    url: 'https://www.dpbolvw.net/click-101586981-15850975',
     text: 'Temu-Angebote entdecken',
     terms: ''
   };
