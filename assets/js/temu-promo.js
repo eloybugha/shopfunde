@@ -5,11 +5,11 @@
   const PROMO = {
   enabled: true,
   url: 'https://www.tkqlhce.com/click-101879213-15623152',
-  headline: 'Bis zu 70 % Rabatt entdecken',
-  description: 'Spare bei ausgewählten Artikeln aus verschiedenen Kategorien.',
+  headline: 'Jetzt sparen: Angebote bei Temu',
+  description: 'Entdecke aktuelle Angebote für Haushalt, Küche, Technik und mehr bei Temu.',
   code: '',
-  terms: 'Bis zu 70 % Rabatt auf ausgewählte Artikel laut angezeigter Aktion. Rabatte und Verfügbarkeit können variieren. Es gelten die Bedingungen bei Temu.',
-  button: 'Jetzt Angebote entdecken →'
+  terms: 'Preise, Rabatte und Verfügbarkeit können variieren. Es gelten die aktuellen Angebotsbedingungen bei Temu.',
+  button: 'Jetzt Angebote sichern →'
 };
 
   function init() {
