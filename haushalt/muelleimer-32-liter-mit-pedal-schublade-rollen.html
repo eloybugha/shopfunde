@@ -2,7 +2,7 @@
 <html lang="de" translate="no">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="google" content="notranslate">
 
   <title>32-Liter-Mülleimer mit Pedal, Schublade und Rollen | ShopFunde</title>
@@ -19,7 +19,8 @@
   <meta property="og:title" content="32-Liter-Mülleimer mit Pedal, Schublade und Rollen">
   <meta property="og:description" content="Das Montagevideo zeigt den Aufbau in 46 Sekunden. Erfahre, wie die Behälter übereinandersitzen und wo du Platz zum Öffnen brauchst.">
   <meta property="og:url" content="https://shopfunde.com/haushalt/muelleimer-32-liter-mit-pedal-schublade-rollen.html">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://shopfunde.com/assets/haushalt/muelleimer-32-liter-mit-pedal-schublade-rollen-hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F20CH0S5B5"></script>
   <script>
@@ -42,6 +43,7 @@
       "@type": "Organization",
       "name": "ShopFunde"
     },
+    "image": "https://shopfunde.com/assets/haushalt/muelleimer-32-liter-mit-pedal-schublade-rollen-hero.webp",
     "mainEntityOfPage": "https://shopfunde.com/haushalt/muelleimer-32-liter-mit-pedal-schublade-rollen.html"
   }
   </script>
@@ -56,38 +58,55 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
     body {
       margin: 0;
-      color: var(--navy);
+      color: #151c2c;
       font: 16px/1.7 system-ui, sans-serif;
     }
+
     a { color: inherit; }
     img { display: block; max-width: 100%; height: auto; }
     [hidden] { display: none !important; }
-    .container { width: min(1180px, calc(100% - 32px)); margin: auto; }
-    h1, h2, h3 { line-height: 1.15; overflow-wrap: break-word; }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.15;
+      overflow-wrap: break-word;
+    }
+
     h1 {
       margin: 12px 0 24px;
-      font-size: clamp(2.35rem, 5vw, 4.6rem);
+      font-size: clamp(2.4rem, 5vw, 4.6rem);
       letter-spacing: -.05em;
     }
+
     h2 {
       margin: 0 0 24px;
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
       letter-spacing: -.035em;
     }
+
     h3 { margin: 0 0 12px; font-size: 1.25rem; }
 
     .skip {
       position: absolute;
       top: -100px;
       z-index: 100;
-      padding: 12px;
       background: white;
+      padding: 12px;
     }
+
     .skip:focus { top: 4px; }
-    :focus-visible { outline: 3px solid #ad400f; outline-offset: 3px; }
 
     header {
       position: sticky;
@@ -96,12 +115,14 @@
       background: #fffffff5;
       border-bottom: 1px solid var(--line);
     }
+
     .nav, .brand, nav, .actions {
       display: flex;
       align-items: center;
       gap: 18px;
     }
-    .nav { min-height: 76px; justify-content: space-between; }
+
+    .nav { justify-content: space-between; min-height: 76px; }
     .brand, nav a, .button { text-decoration: none; font-weight: 750; }
     .brand { gap: 10px; font-size: 1.5rem; }
     .brand img { border-radius: 12px; }
@@ -109,20 +130,22 @@
 
     .button {
       display: inline-block;
-      padding: 12px 20px;
+      text-align: center;
+      padding: 13px 20px;
       border-radius: 13px;
       background: var(--orange);
-      color: #24170f;
-      text-align: center;
+      color: white;
     }
-    .button:hover { background: #ff7846; }
+
+    .button:hover { background: #d34612; }
+
     .secondary {
       background: white;
       color: var(--navy);
       border: 1px solid var(--line);
     }
+
     .secondary:hover { background: var(--cream); }
-    .actions { flex-wrap: wrap; margin: 24px 0; }
 
     .hero {
       padding: 36px 0 48px;
@@ -130,13 +153,19 @@
         radial-gradient(circle at 90% 10%, #ffe4a0, transparent 28%),
         linear-gradient(135deg, #fffaf2, #fff0dc);
     }
-    .hero-grid, .two, .faq { display: grid; gap: 22px; }
-    .hero-grid {
-      grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-      gap: 40px;
-      align-items: start;
+
+    .hero-grid, .two, .media, .faq {
+      display: grid;
+      gap: 22px;
     }
-    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .hero-grid, .two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-grid { gap: 40px; align-items: start; }
+    .media { min-width: 0; }
+
     .label {
       color: #a63910;
       text-transform: uppercase;
@@ -144,68 +173,100 @@
       font-size: .8rem;
       font-weight: 800;
     }
+
     .lead { font-size: 1.1rem; }
     .crumb, .muted, figcaption { color: var(--muted); font-size: .92rem; }
-    .section { padding: 58px 0; }
-    .soft { background: #f7f8fb; }
+    .actions { flex-wrap: wrap; margin: 24px 0; }
 
-    figure, .card, details, .table-wrap, .banner {
+    .note, .disclosure {
+      background: var(--cream);
+      color: #674716;
+      padding: 16px;
+    }
+
+    .note { border-radius: 14px; }
+
+    figure, .card, .banner, details, .table-wrap {
       margin: 0;
       background: white;
       border: 1px solid var(--line);
       border-radius: 20px;
     }
+
     figure {
-      width: min(100%, 430px);
-      justify-self: center;
+      min-width: 0;
       padding: 10px;
       box-shadow: 0 18px 45px #111a2d14;
     }
-    figure, section[id] { scroll-margin-top: 12px; }
-    video {
+
+    .hero-photo { width: 100%; }
+
+    figure video {
       display: block;
       width: 100%;
-      aspect-ratio: 3 / 4;
-      background: #171717;
+      height: auto;
+      max-height: 70vh;
       border-radius: 12px;
+      background: #111;
     }
-    figcaption { padding: 10px 6px 4px; }
 
-    .card, details { padding: 22px; }
-    .card p, details p { margin-bottom: 0; color: var(--muted); }
-    summary { cursor: pointer; font-weight: 750; }
-    .table-wrap { overflow-x: auto; }
-    table { width: 100%; border-collapse: collapse; }
-    caption, th, td { padding: 14px 18px; text-align: left; }
-    th, td { border-top: 1px solid var(--line); vertical-align: top; }
-    thead { background: var(--cream); }
-    tbody th { white-space: nowrap; }
+    figcaption { padding: 10px; }
 
     .banner {
       max-width: 380px;
       padding: 18px;
       margin-top: 22px;
+      animation: glow 3s ease-in-out infinite;
     }
+
     .banner img { margin: auto; }
     .banner small { display: block; margin-top: 10px; color: var(--muted); }
-    .disclosure { padding: 16px 0; background: var(--cream); color: #674716; }
+
+    @keyframes glow {
+      50% {
+        border-color: var(--orange);
+        box-shadow: 0 0 20px #ff5a1f33;
+      }
+    }
+
+    .section { padding: 60px 0; }
+    .soft { background: #f7f8fb; }
+    .card, details { padding: 22px; }
+    .card p, details p { color: var(--muted); margin-bottom: 0; }
+    .table-wrap { overflow: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    caption, th, td { text-align: left; padding: 14px 18px; }
+    th, td { border-top: 1px solid var(--line); vertical-align: top; }
+    thead { background: var(--cream); }
+    summary { cursor: pointer; font-weight: 750; }
+
+    .cta {
+      padding: 36px;
+      background: var(--navy);
+      color: white;
+      border-radius: 24px;
+    }
+
     footer { padding: 38px 0; background: var(--navy); color: #d8dce3; }
     footer nav { flex-wrap: wrap; }
+    :focus-visible { outline: 3px solid #ad400f; outline-offset: 3px; }
 
     @media (max-width: 900px) {
       .hero-grid, .two { grid-template-columns: 1fr; }
       .nav nav a:not(.button) { display: none; }
     }
+
     @media (max-width: 650px) {
       .section { padding: 42px 0; }
       .actions .button { width: 100%; }
       .nav { gap: 8px; }
       .nav .button { padding: 10px 12px; }
       caption, th, td { padding: 12px; }
-      tbody th { white-space: normal; }
     }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
+      .banner { animation: none; }
     }
   </style>
 </head>
@@ -223,8 +284,8 @@
       <nav aria-label="Hauptnavigation">
         <a href="/">Startseite</a>
         <a href="#kaufhilfe">Kaufhilfe</a>
-        <a href="#faq">Fragen</a>
-        <a class="button" href="#produktvideo">Zum Video</a>
+        <a href="#weitere-ideen">Weitere Ideen</a>
+        <a class="button" href="#angebot">Zum Angebot</a>
       </nav>
     </div>
   </header>
@@ -232,7 +293,9 @@
   <main id="main">
     <section class="hero">
       <div class="container">
-        <p class="crumb"><a href="/">Startseite</a> / Haushalt / Mülleimer</p>
+        <p class="crumb">
+          <a href="/">Startseite</a> / Haushalt / Mülleimer
+        </p>
 
         <div class="hero-grid">
           <div>
@@ -248,51 +311,111 @@
             </p>
 
             <div class="actions">
-              <a class="button" href="#produktvideo">Montagevideo ansehen</a>
-              <a class="button secondary" href="#kaufhilfe">Passt er in meine Küche?</a>
+              <a
+                class="button"
+                href="https://www.dpbolvw.net/click-101879213-15584362?url=https%3A%2F%2Fwww.temu.com%2Fde-en%2F3-layer-narrow-trash-can-with-lid--large-capacity-dual-compartment-dry-and-wet--with-wheels-handles-for--perfect-for-kitchen-waste--pedal-operated-kitchen--home-use-recycling-outdoor-g-601105212624626.html"
+                target="_blank"
+                rel="sponsored nofollow noopener"
+                data-affiliate="temu"
+                data-link-type="item"
+                data-placement="hero"
+              >Produkt bei Temu ansehen →</a>
+
+              <a class="button secondary" href="#kaufhilfe">
+                Passt er in meine Küche?
+              </a>
             </div>
 
-            <!-- Hier den produktspezifischen CJ-Link für den 32-Liter-Mülleimer ergänzen. -->
+            <div class="promo-slot">
+              <a
+                data-promo
+                data-affiliate="temu"
+                data-link-type="promo"
+                data-placement="hero-promo"
+                hidden
+              >Temu-Angebote entdecken</a>
+            </div>
+
+            <p class="note">
+              <strong>Werbung / Affiliate-Link.</strong>
+              Bei einem Kauf über unsere Links erhalten wir möglicherweise
+              eine Provision. Für dich entstehen dadurch keine zusätzlichen Kosten.
+            </p>
 
             <p class="muted">
               Die Angabe von 32 Litern stammt aus dem Produktvideo.
               Eine Aufteilung in Liter je Fach wird dort nicht genannt.
             </p>
+
+            <aside class="banner" aria-label="Allgemeine Werbung für Temu">
+              <p class="label">Werbung · Temu</p>
+              <a
+                href="https://www.kqzyfj.com/click-101879213-15623152"
+                target="_blank"
+                rel="sponsored nofollow noopener"
+                data-affiliate="temu"
+                data-link-type="banner"
+                data-placement="hero-banner"
+              >
+                <img
+                  src="https://www.ftjcfx.com/image-101879213-15623152"
+                  width="320"
+                  height="250"
+                  loading="lazy"
+                  alt="Aktuelle Temu-Aktion ansehen"
+                >
+              </a>
+              <small>Der Banner führt zur allgemeinen Temu-Aktion.</small>
+            </aside>
           </div>
 
-          <figure id="produktvideo">
-            <video
-              controls
-              playsinline
-              preload="metadata"
-              width="480"
-              height="640"
-              aria-label="Montagevideo zum 32-Liter-Mülleimer"
-              aria-describedby="videobeschreibung"
-            >
-              <source
-                src="/0a204b6a1813d2f364b4e30e3115dd91bc07f6f1.f30.mp4"
-                type="video/mp4"
+          <div class="media">
+            <figure>
+              <img
+                class="hero-photo"
+                src="/assets/haushalt/muelleimer-32-liter-mit-pedal-schublade-rollen-hero.webp"
+                width="1672"
+                height="941"
+                fetchpriority="high"
+                alt="Schmaler, cremeweißer Küchenmülleimer mit übereinander angeordneten Fächern"
               >
-              Dein Browser unterstützt die Videowiedergabe nicht.
-            </video>
-            <figcaption id="videobeschreibung">
-              Montage in 46 Sekunden, mit englischen Texteinblendungen.
-              <a href="/0a204b6a1813d2f364b4e30e3115dd91bc07f6f1.f30.mp4">
-                MP4 direkt öffnen
-              </a>
-            </figcaption>
-          </figure>
+              <figcaption>Illustration des Küchenmülleimers.</figcaption>
+            </figure>
+
+            <figure id="produktvideo">
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                width="480"
+                height="640"
+                aria-label="Montagevideo zum 32-Liter-Mülleimer"
+                aria-describedby="videobeschreibung"
+              >
+                <source
+                  src="/0a204b6a1813d2f364b4e30e3115dd91bc07f6f1.f30.mp4"
+                  type="video/mp4"
+                >
+                Dein Browser unterstützt die Videowiedergabe nicht.
+              </video>
+              <figcaption id="videobeschreibung">
+                Montage in 46 Sekunden, mit englischen Texteinblendungen.
+                <a href="/0a204b6a1813d2f364b4e30e3115dd91bc07f6f1.f30.mp4">
+                  MP4 direkt öffnen
+                </a>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="montage">
       <div class="container">
-        <p class="label">Aufbau</p>
+        <p class="label">Produktdaten · Aufbau</p>
         <h2>Was zeigt das Montagevideo?</h2>
 
-        <div class="table-wrap" role="region" aria-label="Montageschritte" tabindex="0">
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Montageschritte">
           <table>
             <caption>Die Arbeitsschritte in der Reihenfolge des Videos</caption>
             <thead>
@@ -404,6 +527,27 @@
       </div>
     </section>
 
+    <section class="section" id="angebot">
+      <div class="container">
+        <div class="cta">
+          <h2>32-Liter-Mülleimer bei Temu ansehen</h2>
+          <p>
+            Prüfe die Maße der gewählten Ausführung, den aktuellen Preis
+            und die Lieferbedingungen.
+          </p>
+          <a
+            class="button"
+            href="https://www.dpbolvw.net/click-101879213-15584362?url=https%3A%2F%2Fwww.temu.com%2Fde-en%2F3-layer-narrow-trash-can-with-lid--large-capacity-dual-compartment-dry-and-wet--with-wheels-handles-for--perfect-for-kitchen-waste--pedal-operated-kitchen--home-use-recycling-outdoor-g-601105212624626.html"
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            data-affiliate="temu"
+            data-link-type="item"
+            data-placement="angebot"
+          >Produkt bei Temu ansehen →</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section soft" id="weitere-ideen">
       <div class="container">
         <h2>Weitere Ideen für den Haushalt</h2>
@@ -426,37 +570,6 @@
             </h3>
             <p>Stauraum für Brot und Brötchen auf der Küchenarbeitsplatte.</p>
           </article>
-        </div>
-
-        <aside class="banner" aria-label="Allgemeine Werbung für Temu">
-          <p class="label">Werbung · Temu</p>
-          <a
-            href="https://www.kqzyfj.com/click-101879213-15623152"
-            target="_blank"
-            rel="sponsored nofollow noopener"
-            data-affiliate="temu"
-            data-link-type="banner"
-            data-placement="artikel-banner"
-          >
-            <img
-              src="https://www.ftjcfx.com/image-101879213-15623152"
-              width="320"
-              height="250"
-              loading="lazy"
-              alt="Aktuelle Temu-Aktion ansehen"
-            >
-          </a>
-          <small>Der Banner führt zur allgemeinen Temu-Aktion.</small>
-        </aside>
-
-        <div class="promo-slot">
-          <a
-            data-promo
-            data-affiliate="temu"
-            data-link-type="promo"
-            data-placement="artikel-promo"
-            hidden
-          >Temu-Angebote entdecken</a>
         </div>
       </div>
     </section>
